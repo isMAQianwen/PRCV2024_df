@@ -1,0 +1,41 @@
+train_dataset:
+  name: dataset.data_val.PolypObjDataset
+  params:
+#    image_root: '/home/tju/WD2T/mqw2/project_hongwai_SOD/SOD/SOD/data/USOD10k/USOD10K-TR/remote/RGB/'
+#    gt_root: '/home/tju/WD2T/mqw2/project_hongwai_SOD/SOD/SOD/data/USOD10k/USOD10K-TR/remote/GT/'
+    image_root: 'datasets/WideIRSTD/images/'
+    gt_root: 'datasets/WideIRSTD/masks/'
+    trainsize: 352
+
+test_dataset:
+  COD10K:
+    name: dataset.data_val.test_dataset
+    params:
+#      image_root: '/home/tju/WD2T/mqw2/project_hongwai_SOD/SOD/SOD/data/USOD10k/USOD10K-TE/remote/RGB/'
+#      gt_root: '/home/tju/WD2T/mqw2/project_hongwai_SOD/SOD/SOD/data/USOD10k/USOD10K-TE/remote/GT/'
+      image_root: 'datasets/WideIRSTD/images/'
+      gt_root: 'datasets/WideIRSTD/masks/'
+      testsize: 352
+#  CAMO:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/nature/mqw/salient_diffusion/data/hongwai_bisai/testset/image_raw/'
+#      gt_root: '/home/nature/mqw/salient_diffusion/data/hongwai_bisai/testset/masks/'
+#      testsize: 352
+#  CHAMELEON:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/nature/mqw/salient_diffusion/data/hongwai_bisai/testset/image_raw/'
+#      gt_root: '/home/nature/mqw/salient_diffusion/data/hongwai_bisai/testset/masks/'
+#      testsize: 352
+#  NC4K:
+#    name: dataset.data_val.test_dataset
+#    params:
+#      image_root: '/home/nature/mqw/salient_diffusion/data/hongwai_bisai/testset/image_raw/'
+#      gt_root: '/home/nature/mqw/salient_diffusion/data/hongwai_bisai/testset/masks/'
+#      testsize: 352
+#  CDS2K:
+#    name: dataset.cds2k_dataset.cds2K_dataset
+#    params:
+#      root: '/media/datatset/CDS2K'
+#      testsize: 352
