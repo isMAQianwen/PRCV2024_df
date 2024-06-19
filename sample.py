@@ -94,7 +94,7 @@ if __name__ == "__main__":
     )
 
     trainer.load(pretrained_path=cfg.checkpoint)
-    cod10k_test_loader, camo_test_loader, chameleon_test_loader, nc4k_test_loader = \
+    cod10k_test_loader = \
         trainer.accelerator.prepare(cod10k_test_loader)
 
     dataset_map = {
