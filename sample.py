@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
     for dataset, dataset_name in target_dataset:
         trainer.model.eval()
-        mask_path = Path(cfg.test_dataset.CAMO.params.image_root).parent.parent
+        mask_path = Path(cfg.test_dataset.COD10K.params.image_root).parent.parent
         save_to = Path(cfg.results_folder) / 'WideIRSTD'
         os.makedirs(save_to, exist_ok=True)
         if cfg.batch_ensemble:
